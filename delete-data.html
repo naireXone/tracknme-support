@@ -6,66 +6,122 @@
     <title>Delete Your Data - TracknMe</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
         }
-        h1 { color: #132137; }
-        .method { 
-            background: #f5f5f5; 
-            padding: 20px; 
-            border-radius: 10px; 
-            margin: 20px 0; 
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-        .method h3 { margin-top: 0; color: #132137; }
-        ol { padding-left: 20px; }
-        a { color: #4A90D9; }
-        .contact { 
-            background: #e8f4fd; 
-            padding: 15px; 
-            border-radius: 8px; 
-            margin-top: 30px; 
+        h1 {
+            color: #132137;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #007AFF;
+            font-size: 1.4rem;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #132137;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+        .updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .method-box {
+            background-color: #f8f9fa;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-box {
+            background-color: #f0f7ff;
+            padding: 20px;
+            border-left: 4px solid #007AFF;
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        strong {
+            color: #111;
         }
     </style>
 </head>
 <body>
+
+<div class="container">
     <h1>Delete Your Data</h1>
-    <p><strong>TracknMe</strong> respects your privacy. All your data is stored locally on your device and is never uploaded to our servers.</p>
+    <p class="updated">Last updated: January 2026</p>
+    
+    <p><strong>TracknMe</strong> respects your privacy. All your budget data is stored <strong>locally on your device</strong> and is never uploaded to our servers. Because we do not store your financial data, you have full control over its deletion.</p>
 
-    <div class="method">
-        <h3>Method 1: Clear App Data</h3>
+    <div class="method-box">
+        <h3>Method 1: Clear App Data (In-App)</h3>
+        <p>To delete specific data within the app:</p>
         <ol>
-            <li>Open your device <strong>Settings</strong></li>
-            <li>Scroll down to <strong>Danger Zone</strong>
-            <li>Tap <strong>Wipe Current Sheet Data</strong></li>
-            <li>Tap <strong>Delete Only</strong>
+            <li>Open TracknMe and go to <strong>Settings</strong>.</li>
+            <li>Scroll down to the <strong>Danger Zone</strong>.</li>
+            <li>Tap <strong>Wipe Current Sheet Data</strong>.</li>
+            <li>Confirm by tapping <strong>Delete Only</strong>.</li>
         </ol>
-        <p>This will permanently delete all your data for that sheet</p>
+        <p><em>This will permanently delete all records for that specific sheet.</em></p>
     </div>
 
-    <div class="method">
+    <div class="method-box">
         <h3>Method 2: Uninstall the App</h3>
-        <p>Simply uninstalling TracknMe from your device will remove all locally stored data.</p>
+        <p>Simply uninstalling TracknMe from your device using the system settings or home screen will automatically remove all locally stored databases and preferences.</p>
     </div>
 
-    <div class="method">
+    <div class="method-box">
         <h3>Method 3: Request Purchase Data Deletion</h3>
-        <p>If you made a purchase and want your purchase history deleted from our payment processor, please contact us directly.</p>
+        <p>If you made a purchase and want your anonymized purchase history deleted from our payment processor (RevenueCat), please contact us directly using the information below.</p>
     </div>
 
-    <div class="contact">
-        <h3>Contact Us</h3>
-        <p>For purchase data deletion requests or any questions about your data:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@villcrestjemstudios.com?subject=Data%20Deletion%20Request%20-%20TracknMe">support@villcrestjemstudios.com</a></p>
-        <p>We will process your request within 30 days.</p>
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <p>For purchase data deletion requests or any questions about your data, 
+            <strong><a href="mailto:support@villcrestjemstudios.com?subject=Data%20Deletion%20Request%20-%20TracknMe">contact us.</a></p></strong></p>
+        <p>We will process purchase-related data deletion requests within 30 days.</p>
     </div>
+</div>
 
-    <p style="margin-top: 40px; font-size: 14px; color: #666;">
-        Last updated: January 2026<br>
-        TracknMe
-    </p>
+<footer>
+    TracknMe<br>
+    &copy; 2026 Villcrest JEM Studios. All rights reserved.
+</footer>
+
 </body>
 </html>
